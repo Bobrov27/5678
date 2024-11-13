@@ -49,28 +49,3 @@ print(My_Circle.calculate_area())
 
 
 
-
-
-
-
-class Student:
-    def __init__(self, name, grades):
-        self.name = name
-        self.grades = grades
-
-    def add_grade(self,subject,grade):
-        self.grades[subject].append(grade)
-        return self.grades
-
-    def average_grade(self, subject, grade):
-        self.grades[subject].append(subject)
-        return self.grades
-
-
-Tolya = Student(
-    name= 'Толя',
-        grades={
-            'математика':[2,3,4,5]
-        }
-    )
-print(Tolya.average_grade('математика')) 
